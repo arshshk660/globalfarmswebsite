@@ -1,249 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Global Farms Maharashtra | Organic Farm Products</title>
+<title>Global Farms Maharashtra | Organic Farm Store</title>
 
-<meta name="description" content="Global Farms Maharashtra sells organic fruits, premium cashews, goats, nursery plants and exotic pets. Farm fresh products delivered across India.">
+<meta name="description" content="Buy organic fruits, premium cashews, goats, nursery plants and exotic pets from Global Farms Maharashtra. Farm fresh products delivered across India.">
+
+<meta name="keywords" content="organic fruits maharashtra, farm fresh fruits india, cashew supplier india, goat farm india">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family:Arial;
+font-family:Poppins;
 margin:0;
-background:#f7f7f7;
+background:#f4f7f4;
 color:#333;
 }
 
 header{
-background:#2f7d32;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#2e7d32;
 color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#1b5e20;
-padding:10px;
-text-align:center;
 }
 
 nav a{
+margin:0 15px;
 color:white;
-margin:15px;
 text-decoration:none;
-font-weight:bold;
+font-weight:500;
 }
 
 .hero{
-padding:80px;
-text-align:center;
+height:70vh;
 background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 color:white;
+text-align:center;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
+margin:0;
 }
 
 .hero button{
-padding:15px 30px;
+margin-top:20px;
+padding:14px 30px;
 background:#ff9800;
 border:none;
 color:white;
 font-size:18px;
 cursor:pointer;
+border-radius:6px;
 }
 
-section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
+.section{
+padding:60px 40px;
 }
 
-h2{
+.section h2{
 text-align:center;
 margin-bottom:40px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:20px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-.price{
-font-size:22px;
-color:#2e7d32;
-font-weight:bold;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-
-footer{
-background:#222;
-color:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:20px;
 text-align:center;
-padding:30px;
-margin-top:40px;
+transition:0.3s;
 }
 
-</style>
-</head>
+.card:hover{
+transform:translateY(-6px);
+}
 
-<body>
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+}
 
-<header>
-<h1>Global Farms Maharashtra</h1>
-<p>Organic Farm Products | Fruits | Premium Cashews | Livestock | Nursery</p>
-</header>
-
-<nav>
-<a href="#nuts">Nuts</a>
-<a href="#fruits">Fruits</a>
-<a href="#animals">Animals</a>
-<a href="#nursery">Nursery</a>
-<a href="#exotic">Exotic Pets</a>
-</nav>
-
-<section class="hero">
-<h1>Farm Fresh Organic Products</h1>
-<p>Direct from our farms in Maharashtra</p>
-<button onclick="orderWhatsApp()">Order on WhatsApp</button>
-</section>
-
-<!-- CASHEWS -->
-
-<section id="nuts">
-
-<h2>Premium Cashew Nuts</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Economy Cashews</h3>
-<p>Perfect for daily use</p>
-<p class="price">₹200 / kg</p>
-</div>
-
-<div class="card">
-<h3>Premium Cashews</h3>
-<p>Large size high quality</p>
-<p class="price">₹400 / kg</p>
-</div>
-
-<div class="card">
-<h3>Export Grade Cashews</h3>
-<p>Jumbo W180 quality</p>
-<p class="price">₹600 / kg</p>
-</div>
-
-</div>
-</section>
-
-<!-- FRUITS -->
-
-<section id="fruits">
-
-<h2>Organic Fruits</h2>
-
-<div class="grid">
-
-<div class="card">Guava</div>
-<div class="card">Chiku (Sapota)</div>
-<div class="card">Mango</div>
-<div class="card">Coconut</div>
-<div class="card">Starfruit</div>
-<div class="card">Papaya</div>
-<div class="card">Bananas</div>
-<div class="card">Jackfruit</div>
-
-</div>
-
-</section>
-
-<!-- ANIMALS -->
-
-<section id="animals">
-
-<h2>Farm Animals</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Rajasthani Goats</h3>
-<p>Healthy farm breed goats</p>
-</div>
-
-<div class="card">
-<h3>Barbari Goats (UP)</h3>
-<p>High milk and meat yield</p>
-</div>
-
-<div class="card">
-<h3>Sirohi Goats</h3>
-<p>Strong and adaptable breed</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- NURSERY -->
-
-<section id="nursery">
-
-<h2>Nursery Plants</h2>
-
-<div class="grid">
-
-<div class="card">Mango Saplings</div>
-<div class="card">Coconut Plants</div>
-<div class="card">Flowering Plants</div>
-<div class="card">Fruit Saplings</div>
-
-</div>
-
-</section>
-
-<!-- EXOTIC PETS -->
-
-<section id="exotic">
-
-<h2>Exotic Pets & Birds</h2>
-
-<div class="grid">
-
-<div class="card">Macaw Parrots</div>
-<div class="card">Cockatoos</div>
-<div class="card">Love Birds</div>
-<div class="card">African Grey Parrot</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>Global Farms Maharashtra</h3>
-
-<p>Organic Farming | Premium Cashews |
+button{
+background:#2e7d32;
+border:none;
+pad
