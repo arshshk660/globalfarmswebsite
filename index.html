@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Farms Maharashtra | Organic Farm Products</title>
+<meta name="description" content="Buy organic fruits, vegetables, cashews, goats, country chickens and nursery plants directly from Global Farms Maharashtra.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Open Sans',sans-serif;background:#f6fff6;color:#1f2933}
+header{background:#1f7a3e;color:white;padding:30px 20px;text-align:center}
+header h1{margin:0;font-family:'Montserrat',sans-serif}
+nav{background:#145c2c;display:flex;flex-wrap:wrap;justify-content:center;padding:10px}
+nav a{color:white;margin:8px 15px;text-decoration:none;font-weight:600}
+.hero{padding:60px 20px;text-align:center;background:#e8f7e8}
+.hero h2{font-size:36px;margin-bottom:10px}
+.hero button{padding:12px 20px;border:none;border-radius:6px;background:#1f7a3e;color:white;font-size:16px;cursor:pointer}
+section{padding:50px 10%;}
+h2{font-family:'Montserrat';margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;border-radius:10px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+.card h3{margin-top:0}
+.price{color:#1f7a3e;font-weight:bold;margin:8px 0}
+button.add{background:#1f7a3e;color:white;border:none;padding:10px;border-radius:6px;cursor:pointer}
+.cart{position:fixed;right:20px;bottom:20px;background:#1f7a3e;color:white;padding:15px;border-radius:10px}
+footer{background:#145c2c;color:white;text-align:center;padding:30px;margin-top:40px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Global Farms, Maharashtra</h1>
+<p>Organic Fruits • Premium Cashews • Goats • Exotic Birds • Nursery Plants</p>
+</header>
+
+<nav>
+<a href="#nuts">Nuts</a>
+<a href="#produce">Fruits & Vegetables</a>
+<a href="#animals">Animals</a>
+<a href="#nursery">Nursery</a>
+<a href="#pets">Exotic Pets</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Fresh From Our Farm</h2>
+<p>Organic produce and farm animals directly from Global Farms Maharashtra.</p>
+<button onclick="scrollToSection('produce')">Browse Products</button>
+</section>
+
+<section id="nuts">
+<h2>Cashew Nuts</h2>
+<div class="grid">
+<div class="card"><h3>Economy Cashews</h3><p class="price">₹200 / kg</p><button class="add" onclick="addItem('Economy Cashew ₹200/kg')">Add to Order</button></div>
+<div class="card"><h3>Premium Cashews</h3><p class="price">₹400 / kg</p><button class="add" onclick="addItem('Premium Cashew ₹400/kg')">Add to Order</button></div>
+<div class="card"><h3>Export Quality Cashews</h3><p class="price">₹600 / kg</p><button class="add" onclick="addItem('Export Cashew ₹600/kg')">Add to Order</button></div>
+</div>
+</section>
+
+<section id="produce">
+<h2>Fruits & Vegetables</h2>
+<div class="grid">
+<div class="card"><h3>Watermelon</h3><button class="add" onclick="addItem('Watermelon')">Add</button></div>
+<div class="card"><h3>Guava</h3><button class="add" onclick="addItem('Guava')">Add</button></div>
+<div class="card"><h3>Chiku</h3><button class="add" onclick="addItem('Chiku')">Add</button></div>
+<div class="card"><h3>Mango</h3><button class="add" onclick="addItem('Mango')">Add</button></div>
+<div class="card"><h3>Coconut</h3><button class="add" onclick="addItem('Coconut')">Add</button></div>
+<div class="card"><h3>Starfruit</h3><button class="add" onclick="addItem('Starfruit')">Add</button></div>
+<div class="card"><h3>Papaya</h3><button class="add" onclick="addItem('Papaya')">Add</button></div>
+<div class="card"><h3>Bananas</h3><button class="add" onclick="addItem('Bananas')">Add</button></div>
+<div class="card"><h3>Jackfruit</h3><button class="add" onclick="addItem('Jackfruit')">Add</button></div>
+<div class="card"><h3>Laal Bhaji</h3><button class="add" onclick="addItem('Laal Bhaji')">Add</button></div>
+<div class="card"><h3>Kadi Patta</h3><button class="add" onclick="addItem('Kadi Patta')">Add</button></div>
+<div class="card"><h3>Bhindi</h3><button class="add" onclick="addItem('Bhindi')">Add</button></div>
+<div class="card"><h3>Green Chilli</h3><button class="add" onclick="addItem('Green Chilli')">Add</button></div>
+</div>
+</section>
+
+<section id="animals">
+<h2>Farm Animals</h2>
+<h3>Goats</h3>
+<div class="grid">
+<div class="card">Rajasthani Goats</div>
+<div class="card">Barbari Goats (UP)</div>
+<div class="card">Sojat Goats</div>
+<div class="card">Sirohi Goats</div>
+<div class="card">Desi Goats</div>
+<div class="card">Bantam Goats</div>
+</div>
+
+<h3 style="margin-top:40px">Chickens</h3>
+<div class="grid">
+<div class="card">Pure Gauthi Murgi</div>
+</div>
+</section>
+
+<section id="pets">
+<h2>Exotic Farm Birds</h2>
+<div class="grid">
+<div class="card">Peckin Ducks</div>
+<div class="card">Geese</div>
+<div class="card">Japanese Bantam Chickens</div>
+<div class="card">Brahma Chicken</div>
+<div class="card">Sultan Chicken</div>
+<div class="card">Polish Cap Chicken</div>
+<div class="card">Cochin Bantam Chicken</div>
+<div class="card">Guinea Fowls</div>
+<div class="card">Turkeys</div>
+</div>
+</section>
+
+<section id="nursery">
+<h2>Nursery Saplings</h2>
+<div class="grid">
+<div class="card">Cashew Plant Saplings</div>
+<div class="card">Papaya Saplings</div>
+<div class="card">Desi Roses</div>
+<div class="card">Coconut Saplings</div>
+<div class="card">Chiku Saplings</div>
+<div class="card">Mango Saplings</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Global Farms</h2>
+<p>Location: Maharashtra, India</p>
+<p>Order directly through WhatsApp using the order button below.</p>
+<button onclick="sendOrder()">Place WhatsApp Order</button>
+</section>
+
+<div class="cart" id="cartBox">Order: 0 items</div>
+
+<footer>
+<p>© Global Farms Maharashtra</p>
+<p>Organic • Natural • Farm Raised</p>
+</footer>
+
+<script>
+let cart=[]
+
+function addItem(item){
+cart.push(item)
+document.getElementById('cartBox').innerText='Order: '+cart.length+' items'
+}
+
+function sendOrder(){
+let message="Hello Global Farms,%0AI want to order:%0A"
+cart.forEach(i=>message+=i+"%0A")
+window.open("https://wa.me/?text="+message)
+}
+
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:'smooth'})
+}
+</script>
+
+</body>
+</html>
